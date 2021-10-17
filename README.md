@@ -7,6 +7,7 @@
 - Install dependencies `python -m pip install -r requirements.txt`
 - Run `python manage.py makemigrations` & `python manage.py migrate`
 - Run `python manage.py dbinit` to populate the test dbinit
+- Run `python manage.py runserver` to start server.
 
 # APIs
     'players/' - All players
