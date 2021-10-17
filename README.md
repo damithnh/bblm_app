@@ -2,6 +2,7 @@
 
 # Running the server
 
+- Python version 3.8.8rc1
 - Create python virtual environment and activate it.
 - Install dependencies `python -m pip install -r requirements.txt`
 - Run `python manage.py makemigrations` & `python manage.py migrate`
