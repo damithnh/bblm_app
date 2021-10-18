@@ -38,8 +38,6 @@ def team_detail(request, pk):
         return HttpResponse(status=404)
 
     if request.method == 'GET':
-        print(team)
-        print(team.abbr)
         serializer = TeamSerializer(team)
         return JsonResponse(serializer.data)
     
@@ -47,9 +45,7 @@ def team_detail(request, pk):
 def team_players(request, pk):
     try:
         team1 = Team.objects.get(pk=pk)
-        print(team1.abbr)
         players = Player.objects.filter(team = team1.abbr).values('player')
-        print(players)
     except:
         return HttpResponse(status=404)
 
